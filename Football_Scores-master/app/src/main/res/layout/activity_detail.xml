@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:orientation="horizontal" android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="5dp"
         android:id="@+id/widget_id">
@@ -116,8 +119,12 @@
             android:text="@string/share_text"
             android:id="@+id/share_button"
             android:drawableLeft="@android:drawable/ic_menu_share"
+            android:drawableStart="@android:drawable/ic_menu_share"
             android:paddingLeft="120dp"
-            android:paddingRight="120dp"/>
+            android:paddingStart="120dp"
+            android:paddingEnd="120dp"
+            android:contentDescription="@string/share_button_content"
+            tools:targetApi="jelly_bean_mr1" />
     </FrameLayout>
 
 </LinearLayout>
